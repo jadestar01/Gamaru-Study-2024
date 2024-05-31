@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
             OnHit();
         }
 
-        Debug.Log("player tr : " + collision.gameObject);
+        //Debug.Log("player tr : " + collision.gameObject);
         var enemy = collision.gameObject.GetComponent<Enemy>();
         if (enemy != null)
         {
@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("player : " + collision.gameObject);
+        // Debug.Log("player : " + collision.gameObject);
         var enemy = collision.gameObject.GetComponent<Enemy>();
         if (enemy != null)
         {
